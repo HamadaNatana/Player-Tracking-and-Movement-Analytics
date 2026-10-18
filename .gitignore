@@ -1,0 +1,35 @@
+# Generated YOLO layout (regenerable via convert_to_yolo.py)
+data/yolo/
+
+# Large / local raw datasets
+data/SoccerNetGS/
+data/SoccerNet_raw_HQ/
+data/yolo.zip
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Later training / demo outputs
+runs/
+outputs/
+*.pt
+models/*
+!models/soccer-detect-best.pt
+*.onnx
+*.mp4
+*.avi
+*.mov
+*.mkv
+*_annotated.*
+*_visualization.*
+.cache/
+*.cache
