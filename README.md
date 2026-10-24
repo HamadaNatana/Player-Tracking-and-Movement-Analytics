@@ -16,11 +16,11 @@ The project follows the requirements in [the PRD](docs/Soccer%20Player%20Trackin
   - `goalkeeper`
   - `referee`
   - `ball`
-- Saved the best available checkpoint at
+- Completed the `soccer-detect` training run.
+- Promoted the latest `best.pt` checkpoint to
   `models/soccer-detect-best.pt`.
 
-The shared checkpoint is the best model available so far. If training is still continuing,
-it may be replaced by a later checkpoint after the planned 50 epochs.
+The shared checkpoint is the final best model from the completed training run.
 
 ## Repository layout
 
@@ -125,7 +125,7 @@ where available. The best checkpoint is written to:
 runs/detect/<run-name>/weights/best.pt
 ```
 
-When a new checkpoint is ready to share, copy it to:
+To promote a later checkpoint from this run, copy it to:
 
 ```sh
 cp runs/detect/soccer-detect/weights/best.pt models/soccer-detect-best.pt
