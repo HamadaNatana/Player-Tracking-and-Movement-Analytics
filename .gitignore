@@ -37,3 +37,4 @@ models/*
 # Pitch Pose
 data/pitchpose/images/
 data/pitchpose/labels/
+pitchpose.zip
