@@ -33,3 +33,7 @@ models/*
 *_visualization.*
 .cache/
 *.cache
+
+# Pitch Pose
+data/pitchpose/images/
+data/pitchpose/labels/

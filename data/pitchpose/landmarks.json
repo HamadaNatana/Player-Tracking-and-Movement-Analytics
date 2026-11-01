@@ -1,0 +1,134 @@
+[
+  {
+    "index": 0,
+    "name": "corner left top",
+    "x_m": -52.5,
+    "y_m": -34.0
+  },
+  {
+    "index": 1,
+    "name": "big rect left top at goal line",
+    "x_m": -52.5,
+    "y_m": -20.16
+  },
+  {
+    "index": 2,
+    "name": "big rect left top at front",
+    "x_m": -36.0,
+    "y_m": -20.16
+  },
+  {
+    "index": 3,
+    "name": "small rect left top at goal line",
+    "x_m": -52.5,
+    "y_m": -9.16
+  },
+  {
+    "index": 4,
+    "name": "small rect left top at front",
+    "x_m": -47.0,
+    "y_m": -9.16
+  },
+  {
+    "index": 5,
+    "name": "corner left bottom",
+    "x_m": -52.5,
+    "y_m": 34.0
+  },
+  {
+    "index": 6,
+    "name": "big rect left bottom at goal line",
+    "x_m": -52.5,
+    "y_m": 20.16
+  },
+  {
+    "index": 7,
+    "name": "big rect left bottom at front",
+    "x_m": -36.0,
+    "y_m": 20.16
+  },
+  {
+    "index": 8,
+    "name": "small rect left bottom at goal line",
+    "x_m": -52.5,
+    "y_m": 9.16
+  },
+  {
+    "index": 9,
+    "name": "small rect left bottom at front",
+    "x_m": -47.0,
+    "y_m": 9.16
+  },
+  {
+    "index": 10,
+    "name": "corner right top",
+    "x_m": 52.5,
+    "y_m": -34.0
+  },
+  {
+    "index": 11,
+    "name": "big rect right top at goal line",
+    "x_m": 52.5,
+    "y_m": -20.16
+  },
+  {
+    "index": 12,
+    "name": "big rect right top at front",
+    "x_m": 36.0,
+    "y_m": -20.16
+  },
+  {
+    "index": 13,
+    "name": "small rect right top at goal line",
+    "x_m": 52.5,
+    "y_m": -9.16
+  },
+  {
+    "index": 14,
+    "name": "small rect right top at front",
+    "x_m": 47.0,
+    "y_m": -9.16
+  },
+  {
+    "index": 15,
+    "name": "corner right bottom",
+    "x_m": 52.5,
+    "y_m": 34.0
+  },
+  {
+    "index": 16,
+    "name": "big rect right bottom at goal line",
+    "x_m": 52.5,
+    "y_m": 20.16
+  },
+  {
+    "index": 17,
+    "name": "big rect right bottom at front",
+    "x_m": 36.0,
+    "y_m": 20.16
+  },
+  {
+    "index": 18,
+    "name": "small rect right bottom at goal line",
+    "x_m": 52.5,
+    "y_m": 9.16
+  },
+  {
+    "index": 19,
+    "name": "small rect right bottom at front",
+    "x_m": 47.0,
+    "y_m": 9.16
+  },
+  {
+    "index": 20,
+    "name": "halfway top",
+    "x_m": 0.0,
+    "y_m": -34.0
+  },
+  {
+    "index": 21,
+    "name": "halfway bottom",
+    "x_m": 0.0,
+    "y_m": 34.0
+  }
+]

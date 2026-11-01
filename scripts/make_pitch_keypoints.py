@@ -35,7 +35,7 @@ def keypoint_row(landmarks, width, height):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--data", type=Path, default=Path("data/SoccerNetGS/gamestate-2024"))
+    parser.add_argument("--data", type=Path, default=Path("data/SoccerNetGS"))
     parser.add_argument("--output", type=Path, default=Path("data/pitchpose"))
     parser.add_argument("--sample-every", type=int, default=5,
                         help="keep every Nth frame with pitch lines (neighboring frames are near-duplicates)")
@@ -55,6 +55,7 @@ def main():
 
     counts = defaultdict(Counter)
     seen_landmarks = defaultdict(Counter)  # split -> how many frames show each landmark
+    visible_counts = defaultdict(Counter)  # split -> frames by number of visible landmarks (kept or skipped)
     try:
         for source_split, split in SPLITS.items():
             images_dir = stage / "images" / split
@@ -83,6 +84,7 @@ def main():
                         continue
                     lines = pitch_lines_px(pitch_by_image[image["image_id"]], image["width"], image["height"])
                     landmarks = find_landmarks(lines)
+                    visible_counts[split][len(landmarks)] += 1
                     if len(landmarks) < args.min_keypoints:
                         counts[split]["too_few_keypoints"] += 1
                         continue
@@ -118,6 +120,9 @@ def main():
     for split in SPLITS.values():
         images = counts[split]["images"]
         print(f"{split}: {dict(counts[split])}, mean visible landmarks per frame {counts[split]['keypoints'] / images:.1f}")
+    for split in SPLITS.values():
+        print(f"{split} frames by number of visible landmarks: "
+              + ", ".join(f"{n}: {visible_counts[split][n]}" for n in sorted(visible_counts[split])))
     print("frames showing each landmark (train):")
     for name in LANDMARK_NAMES:
         print(f"  {name:<36} {seen_landmarks['train'][name]:>6}")

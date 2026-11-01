@@ -89,7 +89,7 @@ def check_sequence(sequence_dir, sample_every, min_players, categories, errors, 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--data", type=Path, default=Path("data/SoccerNetGS/gamestate-2024"))
+    parser.add_argument("--data", type=Path, default=Path("data/SoccerNetGS"))
     parser.add_argument("--split", choices=("train", "valid", "test"), default="valid")
     parser.add_argument("--max-sequences", type=int, help="only use the first N sequences")
     parser.add_argument("--sample-every", type=int, default=25, help="use every Nth frame with pitch lines")
